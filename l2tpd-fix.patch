@@ -1,0 +1,24 @@
+--- l2tpd-0.69/network.c~	2004-02-12 16:37:04.000000000 +0100
++++ l2tpd-0.69/network.c	2004-02-12 16:37:04.000000000 +0100
+@@ -364,8 +364,7 @@
+                 extract (buf->start, &tunnel, &call);
+                 if (debug_network)
+                 {
+-                    log (LOG_DEBUG, "%s: recv packet from %s, size = %d,
+-tunnel = %d, call = %d\n", __FUNCTION__, inet_ntoa (from.sin_addr), recvsize, tunnel, call);
++                    log (LOG_DEBUG, "%s: recv packet from %s, size = %d, tunnel = %d, call = %d\n", __FUNCTION__, inet_ntoa (from.sin_addr), recvsize, tunnel, call);
+                 }
+                 if (packet_dump)
+                 {
+--- l2tpd-0.69/call.c~	2004-02-12 16:34:28.000000000 +0100
++++ l2tpd-0.69/call.c	2004-02-12 16:34:28.000000000 +0100
+@@ -193,8 +193,7 @@
+         }
+     }
+     /* I should never get here */
+-    log (LOG_WARN, "%s: You should not see this message.  If you do, please
+-		       enter a bug report at http://sourceforge.net/projects/l2tpd", __FUNCTION__);
++    log (LOG_WARN, "%s: You should not see this message.  If you do, please enter a bug report at http://sourceforge.net/projects/l2tpd", __FUNCTION__);
+     return -EINVAL;
+ }
+ 
