@@ -24,7 +24,9 @@ systemów opartych na POSIX.
 %patch0 -p1
 
 %build
-%{__make}
+%{__make} \
+	CC="%{__cc}" \
+	DFLAGS="%{rpmcflags} -DDEBUG_PPPD -DDEBUG_CONTROL -DDEBUG_ENTROPY"
 
 %install
 rm -rf $RPM_BUILD_ROOT
