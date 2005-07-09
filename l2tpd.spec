@@ -8,7 +8,7 @@ Group:		Networking/Daemons
 Source0:	http://www.l2tpd.org/downloads/%{name}-%{version}.tar.gz
 # Source0-md5:	c5dba6b80f583070fe9e6ed6e0c2162e
 Patch0:		%{name}-fix.patch
-URL:		http://l2tpd.snapgear.org/
+URL:		http://l2tpd.snapgear.org/l2tpd.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
