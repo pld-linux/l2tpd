@@ -1,5 +1,5 @@
 Summary:	Layer two tunelling protocol daemon
-Summary(pl):	Demon tuneluj±cy protoko³y warstwy drugiej
+Summary(pl.UTF-8):   Demon tunelujÄ…cy protokoÅ‚y warstwy drugiej
 Name:		l2tpd
 Version:	0.69
 Release:	0.1
@@ -15,9 +15,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A Layer 2 Tunneling Protocol VPN daemon for Linux and other
 POSIX-bases OSs.
 
-%description -l pl
-Demon VPN tuneluj±cy protoko³y warstwy drugiej dla Linuksa i innych
-systemów opartych na POSIX.
+%description -l pl.UTF-8
+Demon VPN tunelujÄ…cy protokoÅ‚y warstwy drugiej dla Linuksa i innych
+systemÃ³w opartych na POSIX.
 
 %prep
 %setup -q
