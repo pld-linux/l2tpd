@@ -1,5 +1,5 @@
 Summary:	Layer two tunelling protocol daemon
-Summary(pl.UTF-8):   Demon tunelujący protokoły warstwy drugiej
+Summary(pl.UTF-8):	Demon tunelujący protokoły warstwy drugiej
 Name:		l2tpd
 Version:	0.69
 Release:	0.1
